@@ -1,2 +1,2 @@
-# johncrouse123.github.io
-Repository for my Virtual CV/Portfolio.
+# JohnCrouse.github.io
+Virtual CV/Portfolio Website

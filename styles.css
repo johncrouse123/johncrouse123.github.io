@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #081b29;
+    color: #ededed;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: #081b29;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #00abf0;
+}
+
+section {
+    padding: 100px 10%;
+    padding-top: 150px; /* Adjust for fixed header */
+}
+
+.home {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    justify-content: space-between;
+    background: #081b29; /* Background color for Home section */
+}
+
+.home-content {
+    max-width: 600px;
+}
+
+/* Image added */
+.home-img {
+    max-width: 300px;
+    margin-left: 20px;
+}
+
+.home-img img {
+    width: 100%;
+    border-radius: 50%;
+    border: 5px solid #00abf0;
+}
+
+.home-content h1 {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.home-content h3 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #00abf0;
+}
+
+.home-content p {
+    font-size: 16px;
+    margin: 20px 0 40px;
+}
+
+.projects {
+    background: #0a2c3d; /* Background color for Projects section */
+}
+
+.projects-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.projects-content h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 0 10%;
+}
+
+.project {
+    background: #081b29;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.project img {
+    width: 100%;
+    height: 200px; /* Ensure equal height */
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.project img:hover {
+    transform: scale(1.05);
+    filter: brightness(0.8);
+}
+
+.project h3, .project p {
+    margin: 15px 0 10px;
+}
+
+.project a {
+    display: block;
+}
+
+/* Background colors for other sections */
+.about {
+    background: #0a2c3d; /* Background color for About section */
+}
+
+.resume {
+    background: #081b29; /* Background color for Resume/CV section */
+}
+
+.skills {
+    background: #081b29; /* Background color for Skills section */
+}
+
+.contact {
+    background: #0a2c3d; /* Background color for Contact section */
+}
+
+.about-content,
+.resume-content,
+.skills-content,
+.contact-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-content h2,
+.resume-content h2,
+.skills-content h2,
+.contact-content h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.about-content p,
+.resume-content p,
+.skills-content ul,
+.contact-content p {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+.cv-link {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #00abf0;
+    color: #081b29;
+    border: 2px solid #00abf0;
+    border-radius: 8px;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.skills-content ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center-align the skills list */
+    margin: 0; /* Remove any extra margins */
+}
+
+.skills-content ul li {
+    font-size: 18px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    max-width: 400px; /* Adjust the max-width as needed */
+}
+
+.skills-content ul li i {
+    font-size: 24px; /* Adjust size of the icons */
+    margin-right: 20px; /* Space between icon and text */
+    color: #00abf0; /* Icon color */
+}
+
+.contact-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center-align items */
+    gap: 20px; /* Space between items */
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Space between icon and text */
+    background: #0a2c3d;
+    padding: 15px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 350px; /* Width of each contact item */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+}
+
+.contact-item i {
+    font-size: 24px;
+    color: #00abf0;
+}
+
+.contact-info p {
+    margin: 0;
+    font-size: 18px;
+}
+
+.contact-info a {
+    color: #00abf0;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}

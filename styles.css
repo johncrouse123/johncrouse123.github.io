@@ -277,6 +277,7 @@ section {
 
 .about-content,
 .resume-content,
+.projects-content h2,
 .skills-content,
 .contact-content {
     max-width: 800px;
@@ -286,7 +287,6 @@ section {
 
 .about-content h2,
 .resume-content h2,
-.projects-container h2,
 .skills-content h2,
 .contact-content h2 {
     font-size: 36px;
